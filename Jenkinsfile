@@ -13,7 +13,7 @@ pipeline{
         }
         stage("Run Unit and Integration Tests"){
             steps{
-                bat 'dotnet test --nobuild --verbosity normal' // For Windows
+                bat 'dotnet test --no-build --verbosity normal' // For Windows
             }
         }
     }
